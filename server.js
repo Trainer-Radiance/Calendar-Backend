@@ -9,7 +9,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://client-psi-green.vercel.app', 'http://localhost:3000'] 
+    ? ['https://client-psi-green.vercel.app/', 'http://localhost:3000'] 
     : 'http://localhost:3000',
   credentials: true
 }));
