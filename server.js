@@ -93,7 +93,7 @@ app.get('/auth/google', (req, res) => {
   res.redirect(url);
 });
 
-app.get('/auth/callback', async (req, res) => {
+app.get('/auth/google/callback', async (req, res) => {
   try {
     const { code } = req.query;
     const { tokens } = await oauth2Client.getToken(code);
